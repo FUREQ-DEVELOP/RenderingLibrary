@@ -1,6 +1,6 @@
 # RenderingLibrary
 
-独立したモジュール型描画ライブラリおよびSDKです。
+ATMERA の完成した描画 SDK と配布物を公開するリポジトリです。変更可能な実装ソースと Visual Studio 開発環境は [RenderingWorkspace](https://github.com/FUREQ-DEVELOP/RenderingWorkspace) に置きます。
 
 ## 開発目標
 
@@ -23,7 +23,7 @@ Windows / Visual Studio 2022 / C++20
 
 ## 統合開発環境
 
-RenderingWorkspace（Organization内部）
+[RenderingWorkspace](https://github.com/FUREQ-DEVELOP/RenderingWorkspace)
 
 ## 管理担当
 
@@ -31,7 +31,7 @@ Rendering-Team
 
 ## 開発状況
 
-開発準備中。ソースコードの実装は未開始です。
+SDK の配布準備中です。現時点でリリース資産はありません。ビルド可能な実装ソースはこのリポジトリに置きません。配布形式と公開条件は [配布方針](DISTRIBUTION.md) を参照してください。
 
 ## ライセンス
 
