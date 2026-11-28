@@ -1,0 +1,21 @@
+name: Distribution-only repository
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  reject-buildable-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject implementation and build projects
+        shell: bash
+        run: |
+          if git ls-files | grep -Ei '\.(c|cc|cpp|cxx|h|hpp|cs|csproj|vcxproj|sln|slnx|ps1|py|sh|bat|cmd)$'; then
+            echo 'Buildable source and projects belong in RenderingWorkspace.' >&2
+            exit 1
+          fi
